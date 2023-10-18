@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\" />
+    <None Remove="Resources\images\" />
+    <None Remove="GameObject\" />
+    <None Remove="GameObject\Building\" />
+    <None Remove="GameObject\Inventory\" />
+    <None Remove="GameObject\Seed\" />
+    <None Remove="GameObject\Expanse\" />
+    <None Remove="Cell\" />
+    <None Remove="Interface\" />
+    <None Remove="GameObject\Item\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\images\" />
+    <Folder Include="GameObject\" />
+    <Folder Include="GameObject\Building\" />
+    <Folder Include="GameObject\Inventory\" />
+    <Folder Include="GameObject\Seed\" />
+    <Folder Include="GameObject\Expanse\" />
+    <Folder Include="Cell\" />
+    <Folder Include="Interface\" />
+    <Folder Include="GameObject\Item\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Resources\images\carrot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
